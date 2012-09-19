@@ -42,8 +42,8 @@
     <script type="text/javascript" src="http://www.vertstudios.com/vertlib.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/StickyScroller.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/GetSet.js"></script>
-    
-        
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+
     <script type="text/javascript">
     $(window).load(function()
     {
