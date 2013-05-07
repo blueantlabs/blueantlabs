@@ -34,7 +34,6 @@
 
 <body <?php body_class(); ?>>
 
-<div class="topbar"></div>
 <header class="header" role="banner">
 	<a href="<?php echo home_url( '/' ); ?>" rel="home">
 	<img class="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Blue Ant Labs" /></a>
