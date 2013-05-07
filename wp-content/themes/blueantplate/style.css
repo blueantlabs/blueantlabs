@@ -1,5 +1,4 @@
 /*
-
   Theme Name: Blueantplate
   Theme URI: http://blueantlabs.com
   Description: Wordpress theme for Blue Ant Labs, using the Wordpress Boilerplate theme by <a href="http://aarontgrogg.com/">Aaron T. Grogg</a> as a framework.
@@ -7,12 +6,8 @@
   Author URI: http://blueantlabs.com/
   Version: 1.0
   License: GNU General Public License v2.0
-
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
 */
-
-
 
 html, body, body div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,11 +26,9 @@ time, mark, audio, video {
   color:#dce0e4;
   vertical-align: baseline;
 }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after { content: ""; content: none; }
@@ -59,11 +52,11 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 @font-face {
     font-family: 'ContinuumMediumRegular';
-    src: url('continuum-medium-regular-webfont.eot');
-    src: url('continuum-medium-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('continuum-medium-regular-webfont.woff') format('woff'),
-         url('continuum-medium-regular-webfont.ttf') format('truetype'),
-         url('continuum-medium-regular-webfont.svg#ContinuumMediumRegular') format('svg');
+    src: url('fonts/continuum-medium-regular-webfont.eot');
+    src: url('fonts/continuum-medium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/continuum-medium-regular-webfont.woff') format('woff'),
+         url('fonts/continuum-medium-regular-webfont.ttf') format('truetype'),
+         url('fonts/continuum-medium-regular-webfont.svg#ContinuumMediumRegular') format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -192,10 +185,9 @@ h2 { font-size: 24px; }
 
    ========================================================================== */
 
-p {}
 h1 {
-  font-size:24px;
-  font-weight:bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 body {
