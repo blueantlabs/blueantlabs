@@ -7,9 +7,8 @@
  * @since Boilerplate 1.0
  */
 ?>
-
 			<ul class="xoxo">
-
+				
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
 	 * the widgets for that widget area. If it instead returns false,

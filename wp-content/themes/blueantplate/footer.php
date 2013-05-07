@@ -1,10 +1,11 @@
-</div><!-- #content -->
+</div><!-- .content -->
 
-<div id="sidebar">
-
+<div class="sidebar">
 	<?php /* Start the Loop. */ ?>
-	<?php query_posts('p=168'); ?><!-- 138 for local -->
-	<?php while ( have_posts() ) : the_post(); ?>
+
+  <?php query_posts('p=168'); ?><!-- 138 for local -->
+
+  <?php while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="entry-content">
@@ -12,29 +13,20 @@
 			</div><!-- .entry-content -->
 		</article><!-- #post-## -->
 
-<?php endwhile; // End the loop. Whew. ?>
+    <?php endwhile; // End the loop. Whew. ?>
 
-</div><!-- #sidebar -->
-</section><!-- #main -->
+  </div><!-- #sidebar -->
+
+</section><!-- .main -->
 </div>
 
-<div id="footer-top-bg">
-	<footer role="contentinfo">
-		<div id="footer-top"></div>
+<footer class="footer" role="contentinfo">
+  <?php	get_sidebar( 'footer' );?>
 
-	<?php get_sidebar( 'footer' ); ?>
 
-		<div id="footer-content">
+</footer><!-- footer -->
 
-			<p class="alignleft">&copy; 2012 <a href="<?php echo home_url( '/' ) ?>" rel="home"><?php bloginfo( 'name' ); ?></a> </p> 
-
-			<p class="alignright">617 895 6980 &nbsp; &nbsp; | &nbsp;  &nbsp;  <a href="mailto:alex@blueantlabs.com">alex@blueantlabs.com</a></p>
-
-		</div>
-	</footer><!-- footer -->
-</div><!-- #footer-top-bg -->
-
-<?php wp_footer(); ?>
+<?php	wp_footer(); ?>
 
 </body>
 </html>
