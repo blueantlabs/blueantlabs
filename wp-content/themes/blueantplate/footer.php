@@ -1,21 +1,23 @@
 </div><!-- .content -->
 
 <div class="sidebar">
-	<?php /* Start the Loop. */ ?>
+	<div class="side-box">
+		<?php /* Start the Loop. */ ?>
 
-  <?php query_posts('p=168'); ?><!-- 138 for local -->
+	  <?php query_posts('p=168'); ?><!-- 138 for local -->
 
-  <?php while ( have_posts() ) : the_post(); ?>
+	  <?php while ( have_posts() ) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<div class="entry-content">
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boilerplate' ) ); ?>
-			</div><!-- .entry-content -->
-		</article><!-- #post-## -->
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div class="entry-content">
+					<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boilerplate' ) ); ?>
+				</div><!-- .entry-content -->
+			</article><!-- #post-## -->
 
-    <?php endwhile; // End the loop. Whew. ?>
+	    <?php endwhile; // End the loop. Whew. ?>
 
-  </div><!-- #sidebar -->
+  </div><!-- .side-box -->
+</div><!-- .sidebar -->
 
 </section><!-- .main -->
 </div>

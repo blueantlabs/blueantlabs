@@ -15,6 +15,13 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 
+
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/GetSet.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/scripts.js"> </script>
+
 	<?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -23,20 +30,18 @@
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 	wp_head(); ?>
-
-
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/GetSet.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/scripts.js"> </script>
 </head>
 
 <body <?php body_class(); ?>>
 
 <header class="header" role="banner">
-	<a href="<?php echo home_url( '/' ); ?>" rel="home">
-	<img class="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Blue Ant Labs" /></a>
+	<h1 class="site-header">
+		<a href="<?php echo home_url( '/' ); ?>" rel="home">
+			<div class="logo-wrap">
+				<img class="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Blue Ant Labs" /><span>blue ant <em>labs</em></span>
+			</div>
+		</a>
+	</h1>
 </header>
 
 <div class="main-wrapper">
